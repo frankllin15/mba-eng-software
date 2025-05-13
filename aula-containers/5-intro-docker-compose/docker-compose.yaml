@@ -18,6 +18,6 @@ services:
     working_dir: /src
     # definição das variáveis de ambiente via arquivo .env
     environment:
-      - USERNAME=${USERNAME}
+      - USUARIO=${USUARIO}
     # comando a ser utilizado quando o container for criado
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000
